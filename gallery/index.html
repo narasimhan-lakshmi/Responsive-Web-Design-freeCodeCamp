@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery Project</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+
+        section{
+            height: 100vh;
+            width: 100%;
+            position: sticky;
+            top: 0;
+
+        }
+
+        .image{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            filter: brightness(0.9);
+        }
+        .card{
+            height: 100%;
+            width: 100%;
+        }
+
+        .text{
+            position: absolute;
+            height: 100%;
+            width: 50%;
+            top: 0;
+            align-items: center;
+            margin: auto;
+            left: 0;
+            right: 0;
+            /* bottom: 0; */
+            text-align: center;
+            display: flex;
+            justify-content: center;
+
+            color: white;
+            font-size: 20px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .navbar{
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            font-size: 22px;
+            color: white;
+            z-index: 10;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        Welcome to Gallery
+    </nav>
+   <section>
+    <div class="card">
+        <img src="img1.jpg" alt="" 
+        class="image" >
+        <div class="text">
+            Orange is an eye catching one
+    </div>
+        
+   </section> 
+
+   <section style="z-index: 20;">
+    <div class="card">
+        <img src="img2.jpeg" alt="" 
+        class="image" >
+        <div class="text">
+            A white falls between the greens
+    </div>
+        
+   </section> 
+   
+   <section style="z-index: 20;">
+    <div class="card">
+        <img src="img3.jpeg" alt="" 
+        class="image" >
+        <div class="text">
+            Pink Delight
+    </div>
+        
+   </section> 
+   
+   <section style="z-index: 20;">
+    <div class="card">
+        <img src="img4.jpeg" alt="" 
+        class="image" >
+        <div class="text">
+            Butterly on a flower 
+    </div>
+        
+   </section> 
+   
+    
+</body>
+</html>
